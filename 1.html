@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <TITLE>PROJECT</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            background-color: #fefefe;
+            font-family: Helvetica, sans-serif;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        #cubeTransition {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            perspective: 1200px;
+            transform-style: preserve-3d;
+        }
+
+        #cubeTransition div {
+            min-height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 5em;
+            color: #fff;
+            display: none;
+        }
+
+        .visible {
+            display: block !important;
+        }
+
+        .page1 a img,
+        .page2 a img,
+        .page3 a img,
+        .page4 a img,
+        .page5 a img {
+            position: absolute;
+            background-position: center;
+            object-fit: cover;
+            overflow: visible;
+            width: 100%;
+            height: 100%;
+        }
+
+        .rotateCubeTopOut {
+            transform-origin: 50% 100%;
+            animation: rotateCubeTopOut .6s ease-in;
+        }
+
+        .rotateCubeTopIn {
+            transform-origin: 50% 0%;
+            animation: rotateCubeTopIn .6s ease-in;
+        }
+
+        .rotateCubeBottomOut {
+            transform-origin: 50% 0%;
+            animation: rotateCubeBottomOut .6s ease-in;
+        }
+
+        .rotateCubeBottomIn {
+            transform-origin: 50% 100%;
+            animation: rotateCubeBottomIn .6s ease-in;
+        }
+
+        @keyframes rotateCubeTopOut {
+            50% {
+                animation-timing-function: ease-out;
+                transform: translateY(-50%) translateZ(-200px) rotateX(45deg);
+            }
+
+            100% {
+                transform: translateY(-100%) rotateX(90deg);
+            }
+        }
+
+        @keyframes rotateCubeTopIn {
+            0% {
+                transform: translateY(100%) rotateX(-90deg);
+            }
+
+            50% {
+                animation-timing-function: ease-out;
+                transform: translateY(50%) translateZ(-200px) rotateX(-45deg);
+            }
+        }
+
+        @keyframes rotateCubeBottomOut {
+            50% {
+                animation-timing-function: ease-out;
+                transform: translateY(50%) translateZ(-200px) rotateX(-45deg);
+            }
+
+            100% {
+                transform: translateY(100%) rotateX(-90deg);
+            }
+        }
+
+        @keyframes rotateCubeBottomIn {
+            0% {
+                transform: translateY(-100%) rotateX(90deg);
+            }
+
+            50% {
+                animation-timing-function: ease-out;
+                transform: translateY(-50%) translateZ(-200px) rotateX(45deg);
+            }
+        }
+
+        #bullets {
+            position: absolute;
+            width: 100%;
+            bottom: 20px;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        #bullets li {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 0 3px;
+            background: rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        #bullets li:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        #bullets li.active {
+            cursor: default;
+            background: #fff;
+        }
+
+        .credit {
+            position: absolute;
+            bottom: 24px;
+            right: 24px;
+            margin: 0;
+            z-index: 1;
+            font-size: 0.9em;
+        }
+
+        .credit a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 500px) {
+            body {
+                font-size: 10px;
+            }
+
+            .bullets li {
+                margin: 0 6px;
+            }
+
+            .credit {
+                bottom: initial;
+                top: 10px;
+                right: 10px;
+            }
+
+            .share,
+            .github-ribbon {
+                display: none;
+            }
+        }
+    </style>
+    <script src='js/jquery.min.js'></script>
+</head>
+<body>
+    <div id="cubeTransition">
+        <div class="page1">
+            <a href='images/project1-1.jpg'><img src='images/project1-1.jpg' alt='image missing' /></a>
+        </div>
+        <div class="page2">
+            <a href='images/project1-2.jpg'><img src='images/project1-2.jpg' alt='image missing' /></a>
+        </div>
+        <div class="page3">
+            <a href='images/project1-3.jpg'><img src='images/project1-3.jpg' alt='image missing' /></a>
+        </div>
+        <div class="page4">
+            <a href='images/project1-4.jpg'><img src='images/project1-4.jpg' alt='image missing' /></a>
+        </div>
+        <div class="page5">
+            <a href='images/project1-5.jpg'><img src='images/project1-5.jpg' alt='image missing' /></a>
+        </div>
+    </div>
+    <ul id="bullets"></ul>
+    <script>
+        if (document.images) {
+            img1 = new Image();
+            img2 = new Image();
+            img3 = new Image();
+            img4 = new Image();
+            img5 = new Image();
+
+            img1.src = "images/project1-1.jpg";
+            img2.src = "images/project1-2.jpg";
+            img3.src = "images/project1-3.jpg";
+            img4.src = "images/project1-4.jpg";
+            img5.src = "images/project1-5.jpg";
+        }
+
+        function animationIn(i) {
+            console.log(i, 'i\'m in')
+            switch (i) {
+                default:
+                    ;
+            }
+        }
+
+        function animationOut(i) {
+            console.log(i, 'i\'m out')
+            switch (i) {
+                default:
+                    ;
+            }
+        }
+    </script>
+    <script src='js/wheel-indicator.js'></script>
+    <script src="js/jquery.touchSwipe.js"></script>
+    <script src="js/cubeTransition.js"></script>
+</body>
+</html>
