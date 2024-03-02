@@ -1,6 +1,6 @@
 # The Dark Room Photography
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cfefb9d3-822b-4bce-9913-7ac037082767/deploy-status)](https://app.netlify.com/sites/thedarkroomphotography/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4d89804e-4727-4f2e-a21c-638e9fb7cb04/deploy-status)](https://app.netlify.com/sites/thedarkroomphotography/deploys)
 
 ![HTML](https://img.shields.io/badge/HTML-orange)
 ![CSS](https://img.shields.io/badge/CSS-darkblue)
