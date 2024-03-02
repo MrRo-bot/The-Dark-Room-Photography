@@ -13,7 +13,7 @@
 ## Table of contents
 
 - [Overview](#overview)
-- [Links](#links)
+- [Link](#link)
 - [The challenge](#the-challenge)
 - [My process](#my-process)
 - [Built with](#built-with)
@@ -39,10 +39,10 @@ Using every possible fundamentals of basic website
 
 - Taking a proper look and formulating plans for making the design,
 - HTML skeleton with HTML Boilerplate containing default modernizer and normalizer CSS properties,
-- Finalising HTML skeleton,
+- Finalizing HTML skeleton,
 - Typography,
-- Alignments and furthur designing,
-- Finalising everything and solving existing problems,
+- Alignments and further designing,
+- Finalizing everything and solving existing problems,
 - Testing in all screens and making Media Queries if necessary,
 - Deployment and Cross-Testing.
 
@@ -63,7 +63,7 @@ Using every possible fundamentals of basic website
 
 ## Continued development
 
-- Understaning advanced flexbox and grid and css advanced efficient animations,
+- Understanding advanced Flexbox and grid and css advanced efficient animations,
 - Using lesser code and more efficient one.
 
 ## References
