@@ -8,7 +8,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow)
 ![ESLint](https://img.shields.io/badge/ESLint-purple)
 ![Prettier](https://img.shields.io/badge/Prettier-darkpurple)
-![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fthedarkroomphotography.netlify.io)
+![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fthedarkroomphotography.netlify.app)
 
 ## Table of contents
 
