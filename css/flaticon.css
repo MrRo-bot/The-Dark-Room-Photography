@@ -1,0 +1,48 @@
+@font-face {
+  font-family: Flaticon;
+  src: url(../fonts/flaticon/font/Flaticon.eot);
+  src: url(../fonts/flaticon/font/Flaticon.eot?#iefix) format("embedded-opentype"), url(../fonts/flaticon/font/Flaticon.woff) format("woff"), url(../fonts/flaticon/font/Flaticon.ttf) format("truetype"), url(../fonts/flaticon/font/Flaticon.svg#Flaticon) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: Flaticon;
+    src: url(../fonts/flaticon/font/Flaticon.svg#Flaticon) format("svg");
+  }
+}
+
+[class*=" flaticon-"]:after,
+[class*=" flaticon-"]:before,
+[class^=flaticon-]:after,
+[class^=flaticon-]:before {
+  font-family: Flaticon;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-instagram:before {
+  content: "\f100";
+}
+
+.flaticon-camera-shutter:before {
+  content: "\f101";
+}
+
+.flaticon-video-camera:before {
+  content: "\f102";
+}
+
+.flaticon-video-player:before {
+  content: "\f103";
+}
+
+.flaticon-video-player-1:before {
+  content: "\f104";
+}
