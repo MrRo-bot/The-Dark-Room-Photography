@@ -1,6 +1,6 @@
 # The Dark Room Photography
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4d89804e-4727-4f2e-a21c-638e9fb7cb04/deploy-status)](https://app.netlify.com/sites/thedarkroomphotography/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0557a82c-9515-418e-b8ce-15fb76da208d/deploy-status)](https://app.netlify.com/projects/thedarkroomphotography/deploys)
 
 ![HTML](https://img.shields.io/badge/HTML-orange)
 ![CSS](https://img.shields.io/badge/CSS-darkblue)
@@ -13,7 +13,7 @@
 ## Table of contents
 
 - [Overview](#overview)
-- [Link](#link)
+- [Website](#website)
 - [The challenge](#the-challenge)
 - [My process](#my-process)
 - [Built with](#built-with)
@@ -27,7 +27,7 @@
 
 The dark room photography is local photography business which I chose to make portfolio for.
 
-## Link
+## Website
 
 - Netlify URL: [https://thedarkroomphotography.netlify.app/]
 
